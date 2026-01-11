@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=VT323&display=swap');
+
+:root {
+    /* The Upside Down Palette */
+    --bg-color: #050505;
+    --surface-color: #0a0a0a;
+
+    /* Neon Accents */
+    --accent-red: #E50914;
+    /* Stranger Things Red */
+    --accent-glow: rgba(229, 9, 20, 0.6);
+    --accent-secondary: #73C2FB;
+    /* Electricity Blue */
+
+    /* Text */
+    --text-primary: #E0E0E0;
+    --text-secondary: #94A3B8;
+    --text-muted: #525252;
+
+    --border-color: #262626;
+    --border-glow: rgba(229, 9, 20, 0.3);
+
+    /* Typography */
+    --font-title: 'Playfair Display', serif;
+    --font-mono: 'VT323', monospace;
+
+    --spacing-unit: 8px;
+    --container-width: 1024px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-mono);
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    line-height: 1.6;
+    font-size: 1.1rem;
+    /* Slightly larger for the pixel font */
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* CRT Scanline Overlay */
+body::after {
+    content: " ";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 9999;
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-title);
+    color: var(--text-primary);
+    text-transform: uppercase;
+}
+
+/* Neon Text Effect */
+h1,
+h2 {
+    text-shadow: 0 0 5px var(--accent-glow), 0 0 10px var(--accent-glow);
+}
+
+a {
+    color: var(--accent-red);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+a:hover {
+    text-shadow: 0 0 8px var(--accent-red);
+    letter-spacing: 1px;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Animations */
+@keyframes flicker {
+
+    0%,
+    19.999%,
+    22%,
+    62.999%,
+    64%,
+    64.999%,
+    70%,
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 5px var(--accent-glow), 0 0 10px var(--accent-glow);
+    }
+
+    20%,
+    21.999%,
+    63%,
+    63.999%,
+    65%,
+    69.999% {
+        opacity: 0.4;
+        text-shadow: none;
+    }
+}
+
+.flicker-slow {
+    animation: flicker 4s infinite;
+}
+
+.flicker-fast {
+    animation: flicker 1s infinite;
+}
+
+.text-mono {
+    font-family: var(--font-mono);
+}
+
+.section {
+    padding: 100px 0;
+    border-bottom: 1px solid rgba(229, 9, 20, 0.1);
+}
+
+/* Glitch Utility */
+.glitch-hover:hover {
+    animation: flicker 0.3s infinite;
+    color: var(--accent-secondary);
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 60px 0;
+    }
+}

@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "MarineScope (Smart India Hackathon)",
+        "shortDescription": "Unified backend platform for scattered marine research data.",
+        "problem": "Marine research data (oceanographic, fisheries, genomic) exists in isolated systems, making analysis, accessibility, and decision-making inefficient for researchers and policymakers.",
+        "approach": "Designed a centralized Spring Boot backend with REST APIs to integrate heterogeneous datasets. Structured data flow to support scalable access for analytics and ML model consumption.",
+        "tech": [
+            "Spring Boot",
+            "REST APIs",
+            "Python",
+            "Git",
+            "Linux"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "ColorSense",
+        "shortDescription": "Dynamic outfit recommendation engine adapting to weather context.",
+        "problem": "Standard outfit recommendations are static, ignoring real-time environmental factors like weather and user context.",
+        "approach": "Developed backend logic integrating live Weather API and ML model outputs. Designed the service flow to deliver context-aware suggestions based on real-time conditions.",
+        "tech": [
+            "Python",
+            "REST APIs",
+            "Weather API",
+            "ML Integration"
+        ]
+    }
+]

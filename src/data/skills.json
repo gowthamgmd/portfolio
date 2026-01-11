@@ -1,0 +1,74 @@
+[
+    {
+        "category": "Languages",
+        "items": [
+            {
+                "name": "Java",
+                "icon": "devicon-java-plain colored"
+            },
+            {
+                "name": "C",
+                "icon": "devicon-c-plain colored"
+            },
+            {
+                "name": "SQL",
+                "icon": "devicon-postgresql-plain colored"
+            }
+        ]
+    },
+    {
+        "category": "Backend",
+        "items": [
+            {
+                "name": "Spring Boot",
+                "icon": "devicon-spring-original colored"
+            },
+            {
+                "name": "RESTful APIs",
+                "icon": null
+            },
+            {
+                "name": "System Design",
+                "icon": null
+            }
+        ]
+    },
+    {
+        "category": "DevOps & Cloud",
+        "items": [
+            {
+                "name": "Docker",
+                "icon": "devicon-docker-plain colored"
+            },
+            {
+                "name": "Linux",
+                "icon": "devicon-linux-plain"
+            },
+            {
+                "name": "CI/CD",
+                "icon": "devicon-githubactions-plain"
+            },
+            {
+                "name": "Git",
+                "icon": "devicon-git-plain colored"
+            }
+        ]
+    },
+    {
+        "category": "Computer Science Core",
+        "items": [
+            {
+                "name": "Data Structures",
+                "icon": null
+            },
+            {
+                "name": "Algorithms",
+                "icon": null
+            },
+            {
+                "name": "OOP",
+                "icon": null
+            }
+        ]
+    }
+]
