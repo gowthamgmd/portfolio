@@ -13,6 +13,10 @@
             {
                 "name": "SQL",
                 "icon": "devicon-postgresql-plain colored"
+            },
+            {
+                "name": "Python",
+                "icon": "devicon-python-plain colored"
             }
         ]
     },
@@ -30,6 +34,10 @@
             {
                 "name": "System Design",
                 "icon": null
+            },
+            {
+                "name": "Node.js",
+                "icon": "devicon-nodejs-plain colored"
             }
         ]
     },
@@ -39,6 +47,10 @@
             {
                 "name": "Docker",
                 "icon": "devicon-docker-plain colored"
+            },
+            {
+                "name": "AWS",
+                "icon": "devicon-amazonwebservices-original colored"
             },
             {
                 "name": "Linux",
@@ -51,6 +63,15 @@
             {
                 "name": "Git",
                 "icon": "devicon-git-plain colored"
+            }
+        ]
+    },
+    {
+        "category": "Frontend",
+        "items": [
+            {
+                "name": "React.js",
+                "icon": "devicon-react-original colored"
             }
         ]
     },

@@ -28,6 +28,9 @@ const Hero = () => {
                         <a href="#projects" style={styles.primaryBtn}>
                             OPEN FILES
                         </a>
+                        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" style={styles.secondaryBtn}>
+                            ACCESS PROTOCOL
+                        </a>
                         <a href="#contact" style={styles.secondaryBtn}>
                             INITIATE CONTACT
                         </a>
